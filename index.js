@@ -34,17 +34,25 @@ function countProperties(obj){
 }
 console.log(countProperties(obj))
 
-// 2)
+// 2)                               не смог
 let obj1={
     Tom:5000,
     Sam:6000,
     Timmy:4000
 }
+// let obj1={
+//     Tom:{salary:5000},
+//     Sam:{salary:6000},
+//     Timmy:{salary:4000}
+// }
 function getMaxSalary(salaries){
-
+    let newObj1=Object.entries(salaries)
+    newObj1.map(i=>i.values)
+    return 
 }
-
-
+console.log(getMaxSalary(obj1))
+                                    // 
+                                    
 // 3)
 let obj2={
     "1":50,
